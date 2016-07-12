@@ -1,0 +1,18 @@
+{
+  "name": "lab-james",
+  "version": "1.0.0",
+  "description": "",
+  "main": "cowsay.js",
+  "dependencies": {
+    "chai": "^3.5.0"
+  },
+  "devDependencies": {
+    "mocha": "^2.5.3"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
