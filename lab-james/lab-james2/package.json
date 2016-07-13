@@ -1,0 +1,21 @@
+{
+  "name": "lab-james2",
+  "version": "1.0.0",
+  "main": "cowsay.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "cowsay": "^1.1.8",
+    "mocha": "^2.5.3"
+  },
+  "dependencies": {
+    "chai": "^3.5.0",
+    "cowsay": "^1.1.8"
+  },
+  "description": ""
+}
