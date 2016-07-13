@@ -3,13 +3,13 @@ const eslint = require('gulp-eslint');
 const mocha = require('gulp-mocha');
 // const watch = require('gulp-watch');
 
-var allFiles = ['./**/*.js', '!./node_modules/**'];
+var allFiles = ['**/*.js', '!./node_modules/**'];
 var testFiles = ['./test/**/*.js'];
 
 gulp.task('lint', () => {
   return gulp.src(allFiles)
    .pipe(eslint({
-     'rules': {
+     rules: {
        'no-console': 0,
        'indent': [
          2,
@@ -28,12 +28,12 @@ gulp.task('lint', () => {
          'always'
        ]
      },
-     'env': {
+     env: {
        'es6': true,
        'node': true,
        'browser': true
      },
-     'globals': {
+     global: {
        'describe': false,
        'it': false,
        'beforeEach': false,
@@ -41,12 +41,12 @@ gulp.task('lint', () => {
        'before': false,
        'after': false
      },
-     'ecmaFeatures': {
+     ecmaFeatures: {
        'modules': true,
        'experimentalObjectRestSpread': true,
        'impliedStrict': true
      },
-     'extends': 'eslint:recommended'
+     extends: 'eslint:recommended'
    }))
    .pipe(eslint.format());
 });
