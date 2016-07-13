@@ -1,9 +1,25 @@
 const gulp = require('gulp');
 const eslint = require('gulp-eslint');
+const mocha = require('gulp-mocha');
+// const watch = require('gulp-watch');
 
-gulp.task('default', () => {
-  // var testFiles = ['test/*.js'];
-  return gulp.src(['**/*.js', '!node_modules/**'])
-    .pipe(eslint())
-    .pipe(eslint.format());
+var allFiles = ['./**/*.js', '!./node_modules/**'];
+var testFiles = ['./test/**/*.js'];
+
+gulp.task('lint', () => {
+  return gulp.src(allFiles)
+   .pipe(eslint())
+   .pipe(eslint.format());
 });
+
+gulp.task('mocha', () => {
+  return gulp.src(testFiles)
+  .pipe(mocha());
+});
+
+// gulp.task('watch', () => {
+//   return watch(allFiles)
+//   .pipe(gulp.dest('build'));
+// });
+
+gulp.task('default', ['lint', 'mocha']);
