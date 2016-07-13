@@ -1,13 +1,13 @@
 {
   "name": "lab-james",
   "version": "1.0.0",
-  "description": "",
   "main": "cowsay.js",
   "dependencies": {
     "chai": "^3.5.0"
   },
   "devDependencies": {
     "cowsay": "^1.1.8",
+    "gulp": "^3.9.1",
     "mocha": "^2.5.3"
   },
   "scripts": {
@@ -15,5 +15,9 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "directories": {
+    "test": "test"
+  },
+  "description": ""
 }
