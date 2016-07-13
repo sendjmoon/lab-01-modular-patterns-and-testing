@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "main": "cowsay.js",
   "dependencies": {
-    "chai": "^3.5.0"
   },
   "devDependencies": {
+    "chai": "^3.5.0",
     "cowsay": "^1.1.8",
     "gulp": "^3.9.1",
     "gulp-mocha": "^2.2.0",
